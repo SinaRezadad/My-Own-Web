@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+</head>
+<body>
+
+    <div class="myIntro" >
+        <h2 id="myIntro1">This Website Has Been
+        Created As a Portfolio Of My Skills</h2>
+        <h3 id="myIntro2">Front-End Development
+        </h3>
+    </div>
+
+    <div class="myContent">
+        <div class = "Category" id="myResume">
+        <p >to view my resume, please
+        click on the picture</p>
+        <a href="Sina-Rezadad-CV-For-Front End-Developer.pdf">
+          <img id = "cvPic" src="Employee.png" alt="Picture Not Available"
+        style="width:150px"></a>
+    </div>
+
+
+    <div class = "Category" id="Language">
+
+      <h3>Languages and Education</h3>
+      <p id="LanBtn">
+        <button id="education">Education</button>
+        <button id="languages">Languages</button>
+      </p>
+      <div id="myLanguages" style="display:none;text-align:center;">I speak:
+        <p id="English" style="display:none;">English</p>
+        <p id="Spanish" style="display:none;">Spanish</p>
+        <p id="Farsi" style="display:none;">Farsi / Persian</p>
+      </div>
+
+    <div style="display:none;text-align: center;" id="myEducation">I studied:
+        <p id="university" style="display:none;">Aerospace Engineering</p>
+        <p id="MCSD" style="display:none;">Microsoft Certified Solution Developer</p>
+        <p id="Interpreter" style="display:none;">Certified Interpreter</p>
+    </div>
+
+    </div>
+
+      <div class = "Category" id="Skills">
+          <p>To Enter The JavaScript Page Please Fill Up The Blank</p>
+        <form id="initials">
+      Name:    <input type="text" name="Name" placeholder="You Name" >
+      Age:    <input type="number" name="Age" placeholder="Age"
+      style="position:relative;left:12px;">
+</form>
+              <button type="submit" style="position:relative;left:47px;"
+               id="btnSkills" onClick="btnSkillsFunc()">Submit and Enter</button>
+
+      </div>
+
+      <div class="skills" id="divSkills" >
+
+        <p id="theName"></p>
+
+        <p id="skill1">Choose from the following options</p>
+
+        <button id="date" onClick="myDate()">Today's Date</button>
+
+        <button id="test" onClick="textReader()">Simultanous Text Reader</button>
+
+        <p id="myDate"></p>
+
+        <div ng-app="myApp" ng-controller="myCtrl" id="textReaderDiv">
+          Type Here:  <input ng-model="myText" placeholder="Type Here">
+          <p id="textReader">{{myText}}</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+<script src="index.js"  type="text/javascript" ></script>
+
+
+
+
+
+
+</body>
+</html>
