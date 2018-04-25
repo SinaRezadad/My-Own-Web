@@ -1,0 +1,94 @@
+
+  .myIntro {
+  background-color:lightblue;
+  padding: 20px;
+  box-shadow: 0px 5px 20px 20px green;
+  border-radius: 60px 0px 60px 0px;
+  }
+
+  #myIntro1 {
+    color: white;
+    text-align: center;
+}
+#myIntro2 {
+  color: yellow;
+  text-align: center;
+  text-shadow: 4px 1px black;
+}
+
+.myContent{
+  background: yellow;
+  position:relative;
+  top:60px;
+  box-shadow: 0px 5px 20px 20px green;
+  border-radius: 20px;
+  height: 500px;
+
+}
+  .Category{
+    float:left;
+    width:200px;
+    padding:10px;
+  }
+
+  #myResume {
+    background-color: #E2E039;
+  }
+  #myResume:hover {
+    background-color: #CFF407;
+  }
+
+ #cvPic:hover{
+    animation: turnPicture 1s;
+ }
+
+ @keyframes turnPicture {
+   from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+}
+
+#Language{
+  position:relative;
+  width:auto;
+  height:222px;
+  background-color: #E3E11D;
+}
+#Language:hover{
+  position:relative;
+  width:auto;
+  height:222px;
+  background-color: #CFF407;
+}
+#LanguageAndEducation{
+  float:left;
+}
+
+#LanBtn{
+  position:relative;
+  text-align: center;
+}
+
+.Category{
+  background-color:#E2E039;
+  height:222px;
+}
+.Category:hover{
+  background-color:#CFF407;
+  height:222px;
+}
+
+.skills{
+  background-color: blue;
+  float:left;
+  width: 300px;
+  height: 242px;
+  display:none;
+}
+
+#textReaderDiv{
+  display:none;
+}
